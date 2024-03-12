@@ -1,0 +1,28 @@
+function changeButtons(){
+    document.querySelector('#button1').addEventListener('click', function() {
+        document.querySelector('#button1').style.backgroundColor = 'MediumSeaGreen';
+        messageContainer.textContent = "Correct!";
+    })
+
+
+    if (buttons[i] == '#button1') {
+        document.querySelector('#button1').style.backgroundColor = 'MediumSeaGreen';
+        messageContainer.textContent = "Correct!";
+    }
+    else {
+        document.querySelector(buttons[i]).style.backgroundColor = 'Tomato';
+        messageContainer.textContent = "Incorrect";
+    }
+
+    //document.querySelector('#button2').addEventListener('click', function() {
+        //  document.querySelector('#button2').style.backgroundColor = 'Tomato';
+            //messageContainer.textContent = "Incorrect";
+        //})
+        //document.querySelector('#button3').addEventListener('click', function() {
+        //  document.querySelector('#button3').style.backgroundColor = 'Tomato';
+            //messageContainer.textContent = "Incorrect";
+    // })
+        //document.querySelector('#button4').addEventListener('click', function() {
+        //  document.querySelector('#button4').style.backgroundColor = 'Tomato';
+            //messageContainer.textContent = "Incorrect";
+        //})

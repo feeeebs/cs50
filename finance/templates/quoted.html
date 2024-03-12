@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Look up Stock Prices
+{% endblock %}
+
+{% block main %}
+    <h2>Quote a Stock! :)</h2>
+    <br>
+    <form action="/quote" method="post">
+        <div class="mb-3">
+            <input autocomplete="off" autofocus class="form-control mx-auto w-auto" id="symbol" name="symbol" placeholder="Stock symbol" type="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Search</button>
+    </form>
+    <div>
+        <hr>
+    </div>
+    <br>
+    <h2>Stock Price</h2>
+    <br>
+    <table class="center">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Symbol</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{ quotedStock["name"] }}</td>
+                <td>{{ quotedStock["price"] }}</td>
+                <td>{{ quotedStock["symbol"] }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+{% endblock %}

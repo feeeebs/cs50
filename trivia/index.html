@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            // check question 1
+            // TO DO - make less stupid
+            function changeButtons(){
+                document.querySelector('#button1').addEventListener('click', function() {
+                    document.querySelector('#button1').style.backgroundColor = 'MediumSeaGreen';
+                    messageContainer.textContent = "Correct!";
+                })
+                document.querySelector('#button2').addEventListener('click', function() {
+                    document.querySelector('#button2').style.backgroundColor = 'Tomato';
+                    messageContainer.textContent = "Incorrect";
+                })
+                document.querySelector('#button3').addEventListener('click', function() {
+                    document.querySelector('#button3').style.backgroundColor = 'Tomato';
+                    messageContainer.textContent = "Incorrect";
+                })
+                document.querySelector('#button4').addEventListener('click', function() {
+                    document.querySelector('#button4').style.backgroundColor = 'Tomato';
+                    messageContainer.textContent = "Incorrect";
+                })
+            }
+
+            document.addEventListener('DOMContentLoaded', changeButtons);
+
+                // question 2
+            function checkText() {
+                const freeText = document.getElementById("free_text");
+                const submitBtn = document.getElementById("submit_btn");
+
+                submitBtn.addEventListener('click', function() {
+                    const userAnswer = freeText.value.toLowerCase();
+
+                    if (userAnswer === "blue") {
+                        messageContainer2.textContent = "Correct!";
+                    }
+                    else {
+                        messageContainer2.textContent = "Incorrect";
+                    }
+                })
+            }
+            document.addEventListener('DOMContentLoaded', checkText);
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2>Part 1: Multiple Choice </h2>
+                <hr>
+                <h3>What is the smartest dog breed?</h3>
+                <input type="button" id="button1" value="Border Collie">
+                <input type="button" id="button2" value="Irish Wolfhound">
+                <input type="button" id="button3" value="Pomeranian">
+                <input type="button" id="button4" value="Australian Shepherd">
+            </div>
+            <div id="messageContainer"></div>
+
+            <div class="section">
+                <h2>Part 2: Free Response</h2>
+                <hr>
+                <h3>What is your favorite color?</h3>
+                <input type="text" id="free_text" placeholder="Type your answer">
+                <input type="submit" id="submit_btn" value="Submit">
+            </div>
+            <div id="messageContainer2"></div>
+        </div>
+    </body>
+</html>

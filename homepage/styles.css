@@ -1,0 +1,53 @@
+
+--#{$prefix}accordion-color: #{$accordion-color};
+--#{$prefix}accordion-bg: #{$accordion-bg};
+--#{$prefix}accordion-transition: #{$accordion-transition};
+--#{$prefix}accordion-border-color: #{$accordion-border-color};
+--#{$prefix}accordion-border-width: #{$accordion-border-width};
+--#{$prefix}accordion-border-radius: #{$accordion-border-radius};
+--#{$prefix}accordion-inner-border-radius: #{$accordion-inner-border-radius};
+--#{$prefix}accordion-btn-padding-x: #{$accordion-button-padding-x};
+--#{$prefix}accordion-btn-padding-y: #{$accordion-button-padding-y};
+--#{$prefix}accordion-btn-color: #{$accordion-button-color};
+--#{$prefix}accordion-btn-bg: #{$accordion-button-bg};
+--#{$prefix}accordion-btn-icon: #{escape-svg($accordion-button-icon)};
+--#{$prefix}accordion-btn-icon-width: #{$accordion-icon-width};
+--#{$prefix}accordion-btn-icon-transform: #{$accordion-icon-transform};
+--#{$prefix}accordion-btn-icon-transition: #{$accordion-icon-transition};
+--#{$prefix}accordion-btn-active-icon: #{escape-svg($accordion-button-active-icon)};
+--#{$prefix}accordion-btn-focus-border-color: #{$accordion-button-focus-border-color};
+--#{$prefix}accordion-btn-focus-box-shadow: #{$accordion-button-focus-box-shadow};
+--#{$prefix}accordion-body-padding-x: #{$accordion-body-padding-x};
+--#{$prefix}accordion-body-padding-y: #{$accordion-body-padding-y};
+--#{$prefix}accordion-active-color: #{$accordion-button-active-color};
+--#{$prefix}accordion-active-bg: #{$accordion-button-active-bg};
+
+--#{$prefix}navbar-padding-x: #{if($navbar-padding-x == null, 0, $navbar-padding-x)};
+--#{$prefix}navbar-padding-y: #{$navbar-padding-y};
+--#{$prefix}navbar-color: #{$navbar-light-color};
+--#{$prefix}navbar-hover-color: #{$navbar-light-hover-color};
+--#{$prefix}navbar-disabled-color: #{$navbar-light-disabled-color};
+--#{$prefix}navbar-active-color: #{$navbar-light-active-color};
+--#{$prefix}navbar-brand-padding-y: #{$navbar-brand-padding-y};
+--#{$prefix}navbar-brand-margin-end: #{$navbar-brand-margin-end};
+--#{$prefix}navbar-brand-font-size: #{$navbar-brand-font-size};
+--#{$prefix}navbar-brand-color: #{$navbar-light-brand-color};
+--#{$prefix}navbar-brand-hover-color: #{$navbar-light-brand-hover-color};
+--#{$prefix}navbar-nav-link-padding-x: #{$navbar-nav-link-padding-x};
+--#{$prefix}navbar-toggler-padding-y: #{$navbar-toggler-padding-y};
+--#{$prefix}navbar-toggler-padding-x: #{$navbar-toggler-padding-x};
+--#{$prefix}navbar-toggler-font-size: #{$navbar-toggler-font-size};
+--#{$prefix}navbar-toggler-icon-bg: #{escape-svg($navbar-light-toggler-icon-bg)};
+--#{$prefix}navbar-toggler-border-color: #{$navbar-light-toggler-border-color};
+--#{$prefix}navbar-toggler-border-radius: #{$navbar-toggler-border-radius};
+--#{$prefix}navbar-toggler-focus-width: #{$navbar-toggler-focus-width};
+--#{$prefix}navbar-toggler-transition: #{$navbar-toggler-transition};
+
+
+$theme-colors: (
+  "pink":    $pink-100,
+  "blue":   $indigo-100,
+  "teal":   $teal-100,
+  "cyan":   $cyan-100,
+  "dark":   $pink-700
+);

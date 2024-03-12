@@ -1,0 +1,31 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Look up Stock Prices
+{% endblock %}
+
+{% block main %}
+   Welcome to the homepageeeee
+   <hr>
+   <table class="center">
+        <tr>
+            <th>Symbol</th>
+            <th>Shares</th>
+            <th>Current Price</th>
+            <th>Total Value</th>
+        </tr>
+        {% for stock in stockList %}
+        <tr>
+            <td>{{ stock['symbol'] }}</td>
+            <td>{{ stock['SUM(quantity)'] }}</td>
+            <td>{{ stock['price'] }}</td>
+            <td>{{ stock['total_value'] }}</td>
+        </tr>
+        {% endfor %}
+   </table>
+   <hr>
+   Cash Balance: {{userBalance}}
+   <br>
+   Total Holdings: {{totalHoldings}}
+   <br>
+{% endblock %}
